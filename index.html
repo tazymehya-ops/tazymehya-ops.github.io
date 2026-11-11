@@ -692,19 +692,21 @@
     .t-list { display: flex; flex-direction: column; gap: 0.72rem; }
 
     .t-list li {
-      display: flex;
-      gap: 0.7rem;
+      display: block;
       color: var(--text-2);
       font-size: 0.885rem;
       line-height: 1.65;
+      padding-left: 1.2rem;
+      position: relative;
     }
 
     .t-list li::before {
       content: '▸';
       color: var(--gold);
-      flex-shrink: 0;
       font-size: 0.8rem;
-      margin-top: 0.1em;
+      position: absolute;
+      left: 0;
+      top: 0.15em;
     }
 
     .t-list li strong { color: var(--text-1); }
@@ -2024,10 +2026,6 @@
         </div>
 
       </div>
-
-      <p class="contact-note" data-aos="fade-up">
-        No LinkedIn or GitHub profile was listed in the source CV — contact details above are verified from the document only.
-      </p>
 
     </div>
   </div>
